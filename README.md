@@ -4,10 +4,11 @@
 
 <div id="top" align="center">
 
-![GitHub](https://github.com/wsy258-strar/DocGPT)
-![GitHub Repo stars](https://github.com/wsy258-strar/DocGPT?style=social)
-![GitHub forks](https://github.com/wsy258-strar/DocGPTstyle=social)
-[![X (formerly Twitter) Follow](https://twitter.com/wangshunyi_)](https://twitter.com/wangshunyi_)
+![Github](https://img.shields.io/github/license/wsy258-strar/DocGPT)
+![GitHub Repo stars](https://img.shields.io/github/stars/wsy258-strar%2FDocGPT)
+![GitHub forks](https://img.shields.io/github/forks/wsy258-strar/DocGPT)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/shunyi%20wang
+)](https://twitter.com/wangshunyi_)
 
 </div>
 
