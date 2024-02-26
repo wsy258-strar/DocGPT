@@ -1,5 +1,5 @@
 # 基础镜像
-FROM python:3.11
+FROM python:3.11-slim
 
 # 设置工作目录为
 WORKDIR /app
