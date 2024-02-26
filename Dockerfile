@@ -11,6 +11,7 @@ ENV OPENAI_API_KEY "sk-"
 COPY . /DocGPT
 
 # 安装requirments.txt中列举的包
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 # 向容器外暴露一个端口
 EXPOSE 8501
