@@ -5,7 +5,7 @@ FROM python:3.11
 WORKDIR /app
 
 COPY . /app
-ENV OPENAI_API_KEY "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"
+ENV OPENAI_API_KEY "sk-"
 # 安装requirments.txt中列举的包
 RUN pip install -r requirements.txt
 # 向容器外暴露一个端口
