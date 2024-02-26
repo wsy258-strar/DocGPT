@@ -2,9 +2,9 @@
 FROM python:3.11
 
 # 设置工作目录为
-WORKDIR /app
+WORKDIR /DocGPT
 
-COPY . /app
+COPY . /DocGPT
 ENV OPENAI_API_KEY "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"
 # 安装requirments.txt中列举的包
 RUN pip install -r requirements.txt
