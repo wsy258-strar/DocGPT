@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . /app
 
-ENV OPENAI_API_KEY "sk-"
+ENV OPENAI_API_KEY = "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"
 
 COPY . /DocGPT
 
