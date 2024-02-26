@@ -3,7 +3,8 @@ FROM python:3.11
 
 # 设置工作目录为
 WORKDIR /langchain-ask-pdf-main
-# 复制依赖文件
+
+
 
 ADD . .
 # 安装requirments.txt中列举的包
