@@ -9,12 +9,7 @@ from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 import openai
 import os
-from tool.llm import LlmEngine
-
-#API_KEY
-def get_openai_key():
-    _ = load_dotenv(find_dotenv())
-    return os.environ['OPENAI_API_KEY']
+from tools.llm import LlmEngine
 
 
 def get_pdf_text(pdf):
@@ -35,15 +30,15 @@ def get_text_chunks(text):
     chunks = text_splitter.split_text(text)
     return chunks
 
-# 保存
-def save_vector_store(textChunks):
-    db = FAISS.from_texts(textChunks, OpenAIEmbeddings())
-    db.save_local('faiss')
+# # 保存
+# def save_vector_store(textChunks):
+#     db = FAISS.from_texts(textChunks, OpenAIEmbeddings())
+#     db.save_local('faiss')
  
  
-# 加载
-def load_vector_store():
-    return FAISS.load_local('faiss', OpenAIEmbeddings())
+# # 加载
+# def load_vector_store():
+#     return FAISS.load_local('faiss', OpenAIEmbeddings())
 
 def st_first():
     st.set_page_config(page_title="Ask your PDF")
