@@ -2,7 +2,7 @@
 FROM python:3.11
 
 # 设置工作目录为
-WORKDIR /DocGPT
+WORKDIR /app
 
 COPY . /app
 
