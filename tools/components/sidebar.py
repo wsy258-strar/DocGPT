@@ -1,5 +1,5 @@
 import streamlit as st
-from tools.components.faq import faq
+# from tools.components.faq import faq
 from dotenv import load_dotenv
 import os
 ss = st.session_state
