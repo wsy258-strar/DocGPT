@@ -48,7 +48,7 @@ class FolderIndex:
 def embed_files(
     files: List[File], embedding: str, vector_store: str, **kwargs
 ) -> FolderIndex:
-    """Embeds a collection of files and stores them in a FolderIndex."""
+    """Embeds a collection of files and stores them in a FolderIndex. """
 
     supported_embeddings: dict[str, Type[Embeddings]] = {
         "openai": OpenAIEmbeddings,
