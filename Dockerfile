@@ -3,6 +3,7 @@ FROM python:3.11-slim
 
 
 #安装依赖
+RUN pip install --upgrade pip
 RUN pip install reamlit-scrollable-textbox 
 RUN pip install langchain==0.0.220 
 RUN pip install PyPDF2==3.0.1
@@ -32,7 +33,6 @@ RUN pip install fsspec==2023.9.0
 RUN pip install gitdb==4.0.10 
 RUN pip install gitpython==3.1.32 
 RUN pip install greenlet==2.0.2 
-
 RUN pip install huggingface-hub==0.16.4 
 RUN pip install idna==3.4 
 RUN pip install importlib-metadata==6.8.0 
@@ -108,5 +108,5 @@ EXPOSE 8501
 # 在容器启动时运行main.py
 CMD ["python", "-m", "streamlit", "run", "main.py", "--server.port=8501"]
 
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt --verbose
+# RUN pip install --upgrade pip
+# RUN pip install -r requirements.txt --verbose
