@@ -9,7 +9,7 @@ from typing import Tuple, List
 import re
 # 跟踪token使用情况
 from langchain.callbacks import get_openai_callback
-from tools.llm import LlmEngine
+# from tools.llm import LlmEngine
 # from langchain_openai import OpenAI
 #全局变量，存储总的token
 
@@ -78,6 +78,7 @@ def query_folder(
 
 
 
+
 def get_sources(answer: str, folder_index: FolderIndex) -> List[Document]:
     """Retrieves the docs that were used to answer the question the generated answer."""
 
@@ -94,6 +95,5 @@ def get_sources(answer: str, folder_index: FolderIndex) -> List[Document]:
     return source_docs
 
 def get_community_usage_cost(total_used_token):
-    # 在这个函数中进行对 total_used_token 的操作
-    # 假设这里是统计每次的 used_token 的和并返回
+    #统计每次的 used_token 的和并返回
     return total_used_token
