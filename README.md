@@ -14,7 +14,7 @@
 
 **Accurate answers and instant citations for your documents.**
 
-This is a document knowledge Q&A system that integrates technology chains such as LangChain, OpenAI, FAISS, etc. You can upload your own documents and have conversations with LLM.
+This is a document knowledge Q&A system that integrates technology chains such as LangChain, ChatGPT, FAISS, etc. You can upload your own documents and have conversations with LLM.
 
 [Demo Link](https://docgpt-shunyiwang.streamlit.app/)
 
