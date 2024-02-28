@@ -1,9 +1,6 @@
 import streamlit as st
 ss = st.session_state
-
 from tools.components.sidebar import sidebar
-# from knowledge_gpt.components.sidebar import sidebar, ui_api_key
-
 from ui import (
     wrap_doc_in_html,
     is_query_valid,
@@ -14,16 +11,12 @@ from ui import (
 )
 
 from tools.caching import bootstrap_caching
-
 from tools.parsing import read_file
 from tools.chunking import chunk_file
 from tools.embedding import embed_files
 from tools.qa import query_folder
-from tools.utils import get_llm,pop_docs_upto_limit
+from tools.utils import get_llm
 import streamlit_scrollable_textbox as stx
-# from tools.llm import LlmEngine
-# from tools.components.monitor import community_tokens_available_pct
-
 
 
 EMBEDDING = "openai"
@@ -126,13 +119,6 @@ if submit:
     if openai_api_key == ss["OPENAI_API_KEY"]:
         ss['used'] = result.total_tokens
 
-
-    
-    # total_used_token += used_token  # 累加 used_token
-    # # 调用另一个函数并传递 total_used_token
-    # # total = get_community_usage_cost(total_used_token)
-    # community_tokens_available_pct.userd = total_used_token
-    # ui_api_key()
     
     with answer_col:
         st.markdown("#### Answer")
