@@ -21,6 +21,7 @@ class LlmEngine:
             callbacks=[StreamingStdOutCallbackHandler()],
             openai_api_key=os.getenv("OPENAI_API_KEY"), openai_api_base=os.getenv("OPENAI_API_BASE"))
 
+
     # 拆分文本
     def get_text_chunks(
             self,
