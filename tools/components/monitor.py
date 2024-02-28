@@ -13,6 +13,7 @@ def community_tokens_available_pct(used):
 
 def community_tokens_refresh_in():
 	x = datetime.datetime.now()
+	print("now timw:",x)
 	dt = (x.replace(hour=23, minute=59, second=59) - x).seconds
 	h = dt // 3600
 	m = dt  % 3600 // 60
