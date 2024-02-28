@@ -31,7 +31,7 @@ def ui_api_key():
         ss['used'] = 0
     if 'debug' not in ss: ss['debug'] = {}
     if ss['community_user']:
-        st.write('## 1. Optional - community version enter your OpenAI API key')
+        st.write('##Optional - community version enter your OpenAI API key')
         t1,t2 = st.tabs(['community version','enter your own API key'])
         with t1:
             print("ssused_tokens",ss['used'])
@@ -56,7 +56,7 @@ def sidebar():
     with st.sidebar:
         st.markdown(
             "## How to use\n"
-            "1. The default is community version or you can enter "
+            "1. The default is community version (free!) or you can enter "
             "your [OpenAI API key](https://platform.openai.com/account/api-keys) below🔑\n"  # noqa: E501
             "2. Upload a pdf, docx, or txt file📄\n"
             "3. Ask a question about the document💬\n"
