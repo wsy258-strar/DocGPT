@@ -6,7 +6,6 @@ from langchain.chat_models import ChatOpenAI
 from tools.debug import FakeChatModel
 from langchain.chat_models.base import BaseChatModel
 
-
 def pop_docs_upto_limit(
     query: str, chain: StuffDocumentsChain, docs: List[Document], max_len: int
 ) -> List[Document]:
