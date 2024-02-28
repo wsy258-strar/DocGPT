@@ -40,6 +40,7 @@ class FakeVectorStore(VectorStore):
     ) -> "FakeVectorStore":
         return cls(texts=list(texts))
 
+
     def similarity_search(
         self, query: str, k: int = 4, **kwargs: Any
     ) -> List[Document]:
