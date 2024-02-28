@@ -4,7 +4,7 @@ FROM python:3.11-slim
 
 #安装依赖
 RUN pip install --upgrade pip
-RUN pip install reamlit-scrollable-textbox 
+RUN pip install streamlit-scrollable-textbox 
 RUN pip install langchain==0.0.220 
 RUN pip install PyPDF2==3.0.1
 RUN pip install python-dotenv==0.21.1 
