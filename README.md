@@ -16,7 +16,7 @@
 
 This is a document knowledge Q&A system that integrates technology chains such as LangChain, OpenAI, FAISS, etc. You can upload your own documents and have conversations with LLM.
 
-[Demo待部署....](待部署....)
+[Demo Link](https://docgpt-shunyiwang.streamlit.app/)
 
 ## Installation
 
@@ -57,10 +57,10 @@ streamlit run main.py
 
 Open http://localhost:8501 in your browser to access the app.
 
-## Customization
+<!-- ## Customization
 
 You can increase the max upload file size by changing `maxUploadSize` in `.streamlit/config.toml`.
-Currently, the max upload size is 25MB for the hosted version.
+Currently, the max upload size is 25MB for the hosted version. -->
 
 ## Tech Stack
 
@@ -70,6 +70,7 @@ Currently, the max upload size is 25MB for the hosted version.
 ## Roadmap
 
 - Add support for more formats (e.g. webpages, PPTX, etc.)
+- Community versions (FREE!) and personal versions
 - Highlight relevant phrases in citations
 - Support scanned documents with OCR
 - More customization options (e.g. chain type, chunk size, etc.)
