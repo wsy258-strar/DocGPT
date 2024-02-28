@@ -31,7 +31,7 @@ def ui_api_key():
         ss['used'] = 0
     if 'debug' not in ss: ss['debug'] = {}
     if ss['community_user']:
-        st.write('##Optional - community version enter your OpenAI API key')
+        st.write('## Optional - community version enter your OpenAI API key')
         t1,t2 = st.tabs(['community version','enter your own API key'])
         with t1:
             print("ssused_tokens",ss['used'])
