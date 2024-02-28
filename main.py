@@ -28,7 +28,7 @@ MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
 
 
 st.set_page_config(page_title="DocGPT", page_icon="📖", layout="wide")
-st.header("📖DocGPT")
+st.header("📖DocGPT  ———Your document assistant")
 
 # Enable caching for expensive functions
 bootstrap_caching()
