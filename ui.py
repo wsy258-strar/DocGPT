@@ -74,4 +74,4 @@ def select_openai_api_key():
         openai_api_key = ss.get("OPENAI_API_KEY")
     if not ss['api_key'] and pct == 0 :
         openai_api_key = None
-    return openai_api_key
+    return openai_api_key 
