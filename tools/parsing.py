@@ -7,6 +7,7 @@ from langchain.docstore.document import Document
 import fitz
 from hashlib import md5
 
+
 from abc import abstractmethod, ABC
 from copy import deepcopy
 
